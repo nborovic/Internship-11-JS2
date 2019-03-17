@@ -18,9 +18,9 @@ function AppendFilters() {
     let sleeveLengthArray = [{type:"Black", count:"1014"}, {type:"White", count:"890"}, {type:"Navy", count:"411"}, {type:"Grey", count:"381"}, 
     {type:"Green", count:"335"}, {type:"Red", count:"256"}];
     
-    sortArray.forEach(element => sortList.innerHTML += `<li class="dropdown__list__item">${element.type} <span class="list__item__count">(${element.count})</span></li>`);
-    productArray.forEach(element => productList.innerHTML += `<li class="dropdown__list__item">${element.type} <span class="list__item__count">(${element.count})</span></li>`);
-    sleeveLengthArray.forEach(element => sleeveLengthList.innerHTML += `<li class="dropdown__list__item">${element.type} <span class="list__item__count">(${element.count})</span></li>`);
+    sortArray.forEach(element => sortList.innerHTML += `<li onclick="SelectOnClick(this, event)" class="dropdown__list__item">${element.type} <span class="list__item__count">(${element.count})</span></li>`);
+    productArray.forEach(element => productList.innerHTML += `<li onclick="SelectOnClick(this, event)" class="dropdown__list__item">${element.type} <span class="list__item__count">(${element.count})</span></li>`);
+    sleeveLengthArray.forEach(element => sleeveLengthList.innerHTML += `<li onclick="SelectOnClick(this, event)" class="dropdown__list__item">${element.type} <span class="list__item__count">(${element.count})</span></li>`);
 }
 
 function AppendItems() {

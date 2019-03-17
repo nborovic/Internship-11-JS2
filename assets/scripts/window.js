@@ -25,6 +25,7 @@ function OpenItemWindow(item) {
             <script src="./assets/scripts/event.js"></script>
         </body>
     </html>
-  `
+  `;
+
     itemWindow.document.write(windowInnerHtml);
 }

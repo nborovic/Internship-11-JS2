@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 ItemHoverEvent();
 
@@ -26,11 +26,44 @@ function ItemHoverEvent() {
 }
 
 function HeartOnClick(clickedElement, event) {
-    if (clickedElement.style.opacity == "0" || clickedElement.style.opacity == "")
-        clickedElement.style.opacity = "1";
-    else 
-        clickedElement.style.opacity = "0";
+    if (favourites == undefined) return;
 
+    if (clickedElement.style.opacity != "1") {
+        clickedElement.style.opacity = "1";
+        favourites.push(clickedElement.innerHTML);
+    } else {
+        clickedElement.style.opacity = "0"
+        favourites = ArrayRemoveItem(favourites, clickedElement.innerHTML)
+    }
+    
     UpdateFavouritesCount();
     event.stopPropagation();
+}
+
+function DropdownOnClick(clickedElement) {
+    if (DropDownClickOn(clickedElement)) return;
+    DropDownClickOff(clickedElement);
+}
+
+function SelectOnClick(clickedElement) {
+    if (FilterClickOn(clickedElement)) return;
+    FilterClickOff(clickedElement);
+}
+
+function SelectAllOnClick(clickedElement) {
+    let allImg = clickedElement.querySelector(".all__img");
+    let allText = clickedElement.querySelector(".all__text");
+    let filters = clickedElement.parentNode.parentNode.querySelectorAll(".dropdown__list__item");
+
+    if (allImg.style.display != "inline-block") {
+        clickedElement.style.border = "1px solid #0770CF";
+        allImg.style.display = "inline-block";
+        allText.style.color = "#0770CF";
+        filters.forEach(filter => FilterClickOn(filter));
+    } else {
+        clickedElement.style.border = "1px solid #111"
+        allImg.style.display = "none";
+        allText.style.color = "#111";
+        filters.forEach(filter => FilterClickOff(filter));
+    }
 }

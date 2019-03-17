@@ -12,17 +12,17 @@
   <body>
     <header>
       <div class="header__container">
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Sort</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -38,17 +38,17 @@
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Product Type</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -64,17 +64,17 @@
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Sleeve Length</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -90,17 +90,17 @@
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Neckline</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -111,39 +111,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Design</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -154,39 +154,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Range</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -197,39 +197,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Brand</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -240,39 +240,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Size</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -283,39 +283,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Colour</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -326,39 +326,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Fit</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -369,39 +369,39 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="container__search-filter">
+        <div onclick="DropdownOnClick(this)" class="container__search-filter">
           <span class="search-filter__text">Price Range</span>
           <img
             class="search-filter__img"
             src="./assets/images/dropdown-arrow.png"
             alt="Dropdown Arrow"
           />
-          <div class="search-filter__dropdown">
+          <div onclick="event.stopPropagation()" class="search-filter__dropdown">
             <div class="dropdown__top">
               <span class="dropdown__top__selected">0 selected</span>
-              <div class="dropdown__top__all">
+              <div onclick="SelectAllOnClick(this)" class="dropdown__top__all">
                 <img
                   class="all__img"
                   src="./assets/images/check-mark.png"
@@ -412,22 +412,22 @@
             </div>
 
             <ul class="dropdown__list">
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Black <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 White <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Navy <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Grey <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Green <span class="list__item__count">(1014)</span>
               </li>
-              <li class="dropdown__list__item">
+              <li onclick="SelectOnClick(this, event)" class="dropdown__list__item">
                 Red <span class="list__item__count">(1014)</span>
               </li>
             </ul>
